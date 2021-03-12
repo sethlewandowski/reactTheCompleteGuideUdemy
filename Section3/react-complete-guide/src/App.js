@@ -5,12 +5,12 @@ import Person from "./Person/Person"
 class App extends Component {
   state = {
     persons: [
-      { id: "20i352", name: "Max", age: 28 },
-      { id: "20i32", name: "Manu", age: 29 },
-      { id: "204352", name: "Stephanie", age: 26 },
-      { id: "20i2", name: "ted", age: 28 },
-      { id: "2352", name: "aaa", age: 29 },
-      { id: "20222i352", name: "beeni", age: 27 },
+      { id: "1", name: "Max", age: 28 },
+      { id: "2", name: "Manu", age: 29 },
+      { id: "3", name: "Stephanie", age: 26 },
+      { id: "4", name: "ted", age: 28 },
+      { id: "5", name: "aaa", age: 29 },
+      { id: "6", name: "beeni", age: 27 },
     ],
     showPersons: true,
   }
@@ -21,7 +21,7 @@ class App extends Component {
   }
 
   nameChangedHandler = (event, id) => {
-    const personIndex = this.state.person.findIndex((p) => {
+    const personIndex = this.state.persons.findIndex((p) => {
       return p.id === id
     })
 

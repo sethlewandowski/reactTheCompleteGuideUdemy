@@ -6,3 +6,22 @@ Babel allows us to use jsx. which gets complied to normal html
 
 var app = (<div>content here</div>)
 ReactDOM.render(app, document.querySelector('#app'))
+
+WHY REACT?
+- UI state becomes difficult with vanilla js 
+- 
+
+React Alternatives:
+- VUE
+- Angular
+
+
+TWO KINDS OF APPS:
+- SPA vs MPA
+SPA
+- only one HTML page, content is rerendered on CLIENT
+- typically only has one REACTDOM.render() call
+
+MPA
+- Multiple html pages, content rendered on SERVER
+- one reactDOM.render() per 'widget'

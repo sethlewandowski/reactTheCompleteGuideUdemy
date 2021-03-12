@@ -1,0 +1,10 @@
+Why use SPA?
+- Optimize code
+- use nextgen js features
+- be more productive
+
+How?
+- use dependency management tool like npm
+- use Bundler like webpack
+- use complier (Babel)
+- use development server

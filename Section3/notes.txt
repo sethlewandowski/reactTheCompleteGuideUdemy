@@ -26,3 +26,7 @@ jsx restrictions:
         <h1>JSX here</h1>
     </div>
 )
+
+Props allow us to pass data down the component tree (and hence trigger a UI update)
+
+State is used to change the component state from within (changes also trigger a UI update)

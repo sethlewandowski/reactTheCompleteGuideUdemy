@@ -1,0 +1,5 @@
+offical recommended tool for creating react app
+its a github project
+
+installed globally with npm 
+- requires node

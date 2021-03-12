@@ -25,3 +25,24 @@ SPA
 MPA
 - Multiple html pages, content rendered on SERVER
 - one reactDOM.render() per 'widget'
+
+Course outline: (burger builder will be overarching course project)
+- Getting Started
+- JS basics
+- Debugging
+- Styling of apps 
+- Components deep dive 
+- http requests (ajax)
+- Routing 
+- Forms & validation 
+- Redux (3rd party library for state management)
+- Authentication (sign up / sign in)
+- Testing Introduction (big topic but go over some testing)
+- Deployment
+- Bonus content (animations, nextJs, webpack, etc)
+
+How to get the most out of this course: 
+- code along
+- check instructor source code
+- Ask & answer in Q&A : challenge seth - answer some q's!
+- Practice... blah blah blah 

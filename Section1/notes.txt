@@ -1,0 +1,8 @@
+Component driven development reduces repeated code
+
+React is all about components 
+
+Babel allows us to use jsx. which gets complied to normal html
+
+var app = (<div>content here</div>)
+ReactDOM.render(app, document.querySelector('#app'))

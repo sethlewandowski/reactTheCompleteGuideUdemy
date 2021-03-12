@@ -1,67 +1,34 @@
-import React, { Component } from "react"
+import React, { useState } from "react"
 import "./App.css"
 import Person from "./Person/Person"
 
-class App extends Component {
-  // only works in components
-  state = {
+// useState allows us to manage state in a functional component
+
+const app = (props) => {
+  const [persons, setPersons] = useState({
     persons: [
       {
-        name: "seth",
+        name: "Seth",
         age: 28,
       },
-      {
-        name: "ted",
-        age: 33,
-      },
-      {
-        name: "emily",
-        age: 2,
-      },
     ],
+  })
+  const [otherState, setOtherState] = useState({
+    'message'
+  })
+
+  const switchNameHandler = () => {
+    console.log("works")
   }
 
-  switchNameHandler = () => {
-    // dont do this: this.state.persons[0].name = "seffers"
-    this.setState({
-      persons: [
-        {
-          name: "sam",
-          age: 28,
-        },
-        {
-          name: "ted",
-          age: 33,
-        },
-        {
-          name: "emily",
-          age: 2,
-        },
-      ],
-    })
-  }
+  return (
+    <div className='App'>
+      <h1>Hi I'm a react app</h1>
+      <Person name={persons.persons[0].name} age={persons.persons[0].age} />
 
-  render() {
-    return (
-      <div className='App'>
-        <h1>Hi I'm a react app</h1>
-        <Person
-          name={this.state.persons[0].name}
-          age={this.state.persons[0].age}
-        />
-        <Person
-          name={this.state.persons[1].name}
-          age={this.state.persons[1].age}
-        />
-        <Person
-          name={this.state.persons[2].name}
-          age={this.state.persons[2].age}
-        />
-
-        <button onClick={this.switchNameHandler}>Switch Name</button>
-      </div>
-    )
-  }
+      <button onClick={switchNameHandler}>Switch Name</button>
+    </div>
+  )
 }
 
-export default App
+export default app

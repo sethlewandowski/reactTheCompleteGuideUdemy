@@ -12,3 +12,6 @@ const person = (props) => {
 }
 
 export default person
+
+// smart component = stateful
+// dumb component = no state // use as many as possible

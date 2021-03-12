@@ -1,0 +1,12 @@
+with class state, it's one object with all state inside or one property
+class Person extends Component {
+    state = [
+        {person: 'Seth'}   
+    ],
+    age: 28
+}
+
+with functional component state, you break it out individually so that when you update state you don't remove all prior states
+
+const [person, setPerson] = useState({person: 'Seth'})
+const [age, setAge] = useState({age: 28})

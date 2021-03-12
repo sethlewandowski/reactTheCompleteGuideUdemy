@@ -8,3 +8,21 @@ How?
 - use Bundler like webpack
 - use complier (Babel)
 - use development server
+
+react is all about rendering one component to the dom 
+class app extends component means component is the parent class
+app class has one method - render 
+every component needs to have a render method in order to render html to the dom
+- convention is to us js files 
+
+jsx gets complied by this:
+ return React.createElement('div', null, React.createElement('h1', null, 'Hi I'm react app'));
+
+jsx restrictions:
+- class can't be used. it's a reserved word thats why className
+- jsx expressions must have one root element  
+- return (
+    <div>
+        <h1>JSX here</h1>
+    </div>
+)

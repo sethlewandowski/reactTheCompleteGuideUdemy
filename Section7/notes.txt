@@ -40,3 +40,12 @@ Component Lifecycle - Updating
 - render() 
 - update Child Component props
 - getSnapshotBeforeUpdate(prevProps, prevState) // last min dom ops
+- componetDidUpdate() // could make an http req here 
+
+props are accessed with 'this' keyword in class based components
+
+class Persons extends Component {
+    render() {
+        return .... 
+    }
+}

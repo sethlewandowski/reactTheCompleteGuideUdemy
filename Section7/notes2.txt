@@ -1,0 +1,20 @@
+For functional expressions, use UseEffect and useState
+
+useEffect() can be tricky
+
+useEffect(()=> {
+    ...
+
+}, [dependencies that trigger useEffect changes])
+
+if dependencies array is empty, it will only run once 
+
+arrays & objs are reference types 
+else are primitive types 
+
+rendering green flashing offered by chrome to show what's getting re-rendered
+
+React.memo() used to reduce rerendering to improve performance in react functional expressions
+
+React.memo / componentShouldUpdate are equals for different component types
+

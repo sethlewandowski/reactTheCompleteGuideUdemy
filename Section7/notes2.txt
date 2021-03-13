@@ -27,3 +27,14 @@ then react compares virtual dom to re-rendered virtual dom
 if there are differences, then react updates the real dom 
 it does this because it's faster and easier to compare virtual doms than real doms (Document Object Model)
 accessing the real dom is SLOW
+
+
+Lifecycle hooks have nothing to do with react hooks.
+
+ref is a prop that can be used on anything that you pass a fucntion to
+useRef = hook for functional components
+
+useEffect only runs after the render method is run
+
+Context API 
+- 

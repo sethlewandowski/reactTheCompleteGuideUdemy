@@ -18,3 +18,12 @@ React.memo() used to reduce rerendering to improve performance in react function
 
 React.memo / componentShouldUpdate are equals for different component types
 
+PureComponent?
+- normal component that already implements shoudlComponentUpdate
+
+How React Updates the DOM
+- render is called
+then react compares virtual dom to re-rendered virtual dom
+if there are differences, then react updates the real dom 
+it does this because it's faster and easier to compare virtual doms than real doms (Document Object Model)
+accessing the real dom is SLOW

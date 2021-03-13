@@ -12,7 +12,7 @@ class App extends Component {
       { id: "5", name: "aaa", age: 29 },
       { id: "6", name: "beeni", age: 27 },
     ],
-    showPersons: true,
+    showPersons: false,
   }
 
   togglePersonHandler = () => {
@@ -43,24 +43,38 @@ class App extends Component {
   }
 
   render() {
+    const style = {
+      backgroundColor: "green",
+      color: "white",
+    }
+
+    let persons = null
+    if (this.state.showPersons) {
+      persons = (
+        <div>
+          {this.state.persons.map((person, index) => (
+            <Person
+              key={person.id}
+              click={() => this.deletePersonHandler(index)}
+              name={person.name}
+              age={person.age}
+              changed={(event) => this.nameChangedHandler(event, person.id)}
+            />
+          ))}
+        </div>
+      )
+
+      style.backgroundColor = "red"
+    }
+
     return (
       <div className='App'>
         <h1>Hi, I'm a React App</h1>
         <p>This is really working!</p>
-        <button onClick={this.togglePersonHandler}>Show Homies</button>
-        {this.state.showPersons && (
-          <div>
-            {this.state.persons.map((person, index) => (
-              <Person
-                key={person.id}
-                click={() => this.deletePersonHandler(index)}
-                name={person.name}
-                age={person.age}
-                changed={(event) => this.nameChangedHandler(event, person.id)}
-              />
-            ))}
-          </div>
-        )}
+        <button style={style} onClick={this.togglePersonHandler}>
+          Show Homies
+        </button>
+        {persons}
       </div>
     )
   }

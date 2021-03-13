@@ -1,0 +1,42 @@
+When do you decide what to component and what not to? 
+
+SRC
+- Assets
+- Components
+    - Cockpit.js
+    - Persons
+        -Persons.js (functional component that lists Persons)
+        -Persons
+            -Person.js
+            -Person.css
+-Containers
+    -App.js
+    -App.css
+
+
+All custom components should use upper case 
+
+Stateless vs Stateful components
+- Stateful means any component that manages State
+- Presentational/dumb/stateless used to be only functional - not anymore since the useEffect hook. 
+- try to minimize stateful components (container components)
+
+Class based vs functional 
+- Use classbased if you need to access lifecycle hooks and dont want to use react hooks. 
+- Use functional for all else
+
+Component lifecycle - Creation
+- Only avail in class based components
+- Start with calling contstructor
+- getDerivedStateFromProps(props, state)
+- componentWillMount() // preparing state correctly? not used anymore
+- render() // returns jsx
+- Render Child Components
+- componentDidMount() // used to make http requests 
+
+Component Lifecycle - Updating
+- getDerivedStateFromProps() // VERY RARELY used
+- shouldComponentUpdate(nextProps, nextState) // decide whether to contine or not
+- render() 
+- update Child Component props
+- getSnapshotBeforeUpdate(prevProps, prevState) // last min dom ops

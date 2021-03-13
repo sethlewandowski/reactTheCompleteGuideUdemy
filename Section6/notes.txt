@@ -1,0 +1,20 @@
+Type Errors - Cannot read prop value of undefined
+
+
+Logical Errors - Harder to spot. Don't get an error message. 
+Ex. you have obj.prop === argument ? 
+in a situation when obj.prop is undefined or doesn't exist. 
+breakpoints is really cool.
+Source maps dev tools can see source code and pause app
+
+React Dev Tools:
+- Components 
+- Profiler
+
+Code that fails at runtime 
+- 
+
+Error Boundaries:
+- 
+
+Keys always have ot be on outer element 

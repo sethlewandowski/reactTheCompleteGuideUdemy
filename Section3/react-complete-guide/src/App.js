@@ -1,4 +1,5 @@
 import React, { Component } from "react"
+import Radium from "radium"
 import "./App.css"
 import Person from "./Person/Person"
 
@@ -46,6 +47,11 @@ class App extends Component {
     const style = {
       backgroundColor: "green",
       color: "white",
+      cursor: "pointer",
+      ":hover": {
+        backgroundColor: "pink",
+        color: "black",
+      },
     }
 
     let persons = null
@@ -65,6 +71,10 @@ class App extends Component {
       )
 
       style.backgroundColor = "red"
+      style[":hover"] = {
+        backgroundColor: "salmon",
+        color: "pink",
+      }
     }
 
     const classes = []
@@ -88,4 +98,4 @@ class App extends Component {
   }
 }
 
-export default App
+export default Radium(App) // called a higher order component

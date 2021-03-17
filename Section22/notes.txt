@@ -1,0 +1,20 @@
+Webpack
+- bundler 
+- optimizes
+- analyzes connections & bundles
+- defacto standard for setting up projects
+
+How it works: 
+1. Needs one entry point (app.js for example)
+2. Loaders (babel-loader or css-loader)
+3. Plugins (uglify) Global transformations
+4. Output (correctly ordered, concatenated output) (bundle.js)
+
+Requirements
+- want to complie to next gen js
+- handle jsx
+- css autoprefixing
+- support image imports 
+- optimize code 
+
+Project and npm setup

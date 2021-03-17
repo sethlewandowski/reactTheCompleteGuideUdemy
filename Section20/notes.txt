@@ -1,0 +1,4 @@
+testing tools - Jest provided by react
+testing is bascially a system you set up that runs a bunch of checks and you can run this test of unit tests after you make updates to your app to ensure nothing is breaking. 
+
+

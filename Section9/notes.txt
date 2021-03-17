@@ -1,0 +1,2 @@
+Server is typically a restful API. 
+

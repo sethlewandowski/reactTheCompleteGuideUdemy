@@ -2,3 +2,23 @@ testing tools - Jest provided by react
 testing is bascially a system you set up that runs a bunch of checks and you can run this test of unit tests after you make updates to your app to ensure nothing is breaking. 
 
 
+Enzyme - tool developed by Airbnb for testing utilities
+
+Things not to test:
+- Library (redux, react, axios, etc. )
+
+What to test: 
+- isolated units 
+- reducer functions
+- componet functions
+- conditional outputs
+- prop changes 
+
+Make sure jest is installed in package json
+then install Enzyme
+then instlal react-test-renderer
+enzyme-adapter-react-{version}
+
+Documentation
+- google for jest (not bound to react)
+- 

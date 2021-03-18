@@ -1,0 +1,18 @@
+react hooks
+- useBlank()
+- highly reusable
+- expose certain functionalities to functional components
+- allow you to add state and lifcycle to functional components
+- introduced with React 16.8
+- can build custom hooks to share stateful or statless logic across multiple components
+
+React Hooks have nothing to do with lifycle hooks (methods)
+- called hooks because you hook something into a component
+
+Lifecyle hooks are restircted to class based components
+
+useState is the core hook 
+- allows us to use state in func component
+
+with empty array as useEffect second argument, it only runs once. If you add variable into dependency array, then it runs anytime a value in the array is changed. 
+
